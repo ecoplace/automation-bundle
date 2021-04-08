@@ -119,7 +119,7 @@
 			// if(value == 'delete_ticket' || value == 'mark_spam')
 			this.siblingValue.find('select, textarea, div').remove();
 
-			if (value == 'uvdesk.agent.add_note' || value == 'reply') {
+			if (value == 'uvdesk.agent.add_note' || value == 'reply' || value == 'ticket.review') {
 				this.siblingValue.prepend(this.valueTextTemplate(_.extend(this.model, {'keyNo': this.keyNo})));
 			} else if (value != 'uvdesk.ticket.delete' && value != 'uvdesk.ticket.mark_spam' && value) {
 				this.selectOpt.prop('disabled', true);
